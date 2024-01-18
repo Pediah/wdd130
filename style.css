@@ -1,0 +1,42 @@
+/* Main Selector */
+main {
+  max-width: 800px; /* Adjust the value as needed */
+  margin: 0 auto;  /* Center the content */
+
+  /* Additional styling for main if needed */
+}
+
+/* Aside Selector */
+aside {
+  width: 300px;    /* Adjust the width as needed */
+  margin: 20px 0;  /* Adjust the margin as needed */
+  border: 1px solid #ddd;  /* Border color and style */
+  padding: 10px;   /* Adjust the padding as needed */
+  background-color: #f9f9f9;  /* Background color */
+  color: #333;     /* Text color */
+}
+
+/* Image inside Aside */
+aside img {
+  width: 200px;    /* Set the width of the image */
+  height: auto;   /* Maintain the aspect ratio */
+}
+
+/* Existing Profile Image Selector */
+main img {
+  width: 150px;
+  height: auto;
+  /* ... existing styles ... */
+}
+
+/* Update Padding for Paragraph */
+p {
+  padding: 0;
+}
+
+/* Footer Selector */
+footer {
+  margin-top: 20px;   /* Add top margin to separate from main content */
+  border-top: 1px solid #ddd;  /* Add a top border for distinction */
+  text-align: center; /* Align text to the center */
+}

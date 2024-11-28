@@ -86,7 +86,7 @@ nav img {
     transform: translate(-50%,-50%);
     text-align: center;
     overflow: hidden;
-    margin-top: 40px; /* Adjusted margin from the header */
+    margin-top: 40px; 
 }
 
 
@@ -185,50 +185,64 @@ nav img {
 }
 
 
-
-
-/* Main container styling */
 main {
-    max-width: 640px; /* Restricts the width of the main section */
-    margin: 0 auto;   /* Centers the main section horizontally */
-    padding: 20px;    /* Adds space inside the main section */
-    position: relative; /* Ensures absolute positioning works for child elements */
-    display: block;   /* Explicitly sets block display */
+    max-width: 640px; 
+    margin: 0 auto; 
+    padding: 20px;    
+    position: relative;
+    display: block; 
 }
 
-/* Image styling */
 main img {
-    width: 500px;            /* Sets a fixed width for the image */
-    height: auto;            /* Maintains the aspect ratio of the image */
-    display: block;          /* Makes the image behave like a block element */
-    margin-bottom: 15px;     /* Adds spacing below the image */
-    border: 1px solid #ccc;  /* Adds a light gray border */
-    box-shadow: 0 0 30px #666; /* Adds a subtle shadow around the image */
-    float: left;             /* Floats the image to the left */
-    margin: 0 1rem 1rem 0;   /* Adjusts spacing around the floated image */
-    padding: 2px;            /* Adds inner padding inside the border */
+    width: 500px;        
+    height: auto;      
+    display: block;      
+    margin-bottom: 15px;     
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 30px #666; 
+    float: left;             
+    margin: 0 1rem 1rem 0;   
+    padding: 2px;        
 }
 
-/* Paragraph styling */
+
 main p {
     margin-top: 10%;
-    position: absolute;           /* Positions the paragraph relative to the main container */                    /* Positions the paragraph 20% from the top of the container */
-    right: 20%;                   /* Positions the paragraph 20% from the right of the container */
-    background-color: white; /* Adds a semi-transparent black background */
-    color: var(--accent2-color);                 /* Sets text color to white for contrast */
-    padding: 15px;                /* Adds space inside the paragraph */
-    border-radius: 5px;           /* Rounds the corners of the paragraph box */
-    max-width: 40%;               /* Restricts the paragraph's width */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a soft shadow for depth */
+    position: absolute;          
+    right: 20%;                   
+    background-color: white; 
+    color: var(--accent2-color);        
+    padding: 15px;              
+    border-radius: 5px;          
+    max-width: 40%;               
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
-/* Button styling */
 main p .actbtn {
-    display: inline-block;        /* Makes the button inline but allows block-level styling */
-    padding: 10px 20px;          /* Adds space inside the button */
-    border-radius: 5px;          /* Rounds the corners of the button */
-    margin-top: 10px;            /* Adds spacing above the button */
+    display: inline-block;     
+    padding: 10px 20px;      
+    border-radius: 5px;       
+    margin-top: 10px;      
 }
 
+@media (max-width: 768px) {
+    main img {
+        width: 100%;            
+        margin: 0 auto 15px;    
+        float: none;           
+    }
 
-  
+    main p {
+        position: relative;      
+        right: 0;             
+        margin-top: 5%;          
+        max-width: 90%;         
+    }
+
+    main p .actbtn {
+        display: block;
+        margin: 0 auto;
+        width: 50%;             
+        text-align: center;      
+    }
+}
